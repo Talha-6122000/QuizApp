@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Trivia Quiz App</string>
+    <string name="txt_btn_play">Starts Quiz!</string>
+    <string name="txt_your_score">Your Scores</string>
+    <string name="txt_select_category">Select Category</string>
+    <string name="txt_select_difficulty">Select Category</string>
+    <string name="txt_score">Score</string>
+    <string name="txt_ok">Ok</string>
+    <string name="txt_score_achieved">You scored:</string>
+    <string name="txt_license">Open Source Licenses</string>
+
+    <!--Categories-->
+    <string name="txt_category_gk">General \nKnowledge</string>
+    <string name="txt_category_books">Books</string>
+    <string name="txt_category_science_nature">Science &amp; \nNature</string>
+    <string name="txt_category_computer">Computers</string>
+    <string name="txt_category_sports">Sports</string>
+    <string name="txt_category_geography">Geography</string>
+    <string name="txt_category_history">History</string>
+    <string name="txt_category_music">Music</string>
+
+    <!--Progress messages-->
+    <string name="message_loading_quiz">Please wait while loading Your Quiz</string>
+    <string name="message_no_network">No Internet Connection !!</string>
+
+</resources>

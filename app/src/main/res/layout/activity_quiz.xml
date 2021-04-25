@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity">
+
+    <include
+        layout="@layout/toolbar_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <include
+            layout="@layout/progress_app"
+            android:visibility="gone"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/lyt_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/txt_question"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/round_button"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:padding="@dimen/padding_8"
+                android:textAllCaps="false"
+                android:textSize="@dimen/font_20"
+                android:textStyle="bold"
+                app:fontFamily="@font/font_body" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center">
+
+
+                <Button
+                    android:id="@+id/btn_option1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/margin_30"
+                    android:layout_marginTop="85dp"
+
+                    android:layout_marginRight="@dimen/margin_30"
+                    android:background="@drawable/round_button"
+                    android:maxLines="2"
+                    android:textColor="@android:color/white"
+                    android:padding="@dimen/padding_5"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/font_small"
+                    app:fontFamily="@font/font_body" />
+
+                <Button
+                    android:id="@+id/btn_option2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_option1"
+                    android:layout_marginLeft="@dimen/margin_30"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginRight="@dimen/margin_30"
+                    android:background="@drawable/round_button"
+                    android:maxLines="2"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/font_small"
+                    app:fontFamily="@font/font_body" />
+
+                <Button
+                    android:id="@+id/btn_option3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_option2"
+                    android:layout_marginLeft="@dimen/margin_30"
+                    android:layout_marginTop="13dp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginRight="@dimen/margin_30"
+                    android:background="@drawable/round_button"
+                    android:maxLines="2"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/font_small"
+                    app:fontFamily="@font/font_body" />
+
+                <Button
+                    android:id="@+id/btn_option4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_option3"
+                    android:layout_marginLeft="@dimen/margin_30"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginRight="@dimen/margin_30"
+                    android:background="@drawable/round_button"
+                    android:maxLines="2"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/font_small"
+                    app:fontFamily="@font/font_body" />
+                <Button
+                    android:id="@+id/hard_soft"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_option4"
+                    android:layout_marginLeft="@dimen/margin_30"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="@dimen/margin_30"
+                    android:visibility="invisible"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/round_button"
+                    android:maxLines="2"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/font_small"
+                    app:fontFamily="@font/font_body" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>
